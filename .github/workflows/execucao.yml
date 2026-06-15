@@ -29,10 +29,10 @@ jobs:
           node-version: 20
 
       - name: Instalando dependências
-        run: npm ci
+        run: yarn install --frozen-lockfile
 
       - name: Executando testes (Mocha)
-        run: npm test
+        run: yarn test
 
       - name: Gerando relatórios
         if: always()
