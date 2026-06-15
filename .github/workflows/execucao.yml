@@ -1,0 +1,48 @@
+#CI de nível 01, 02 e 04 - ExecuçãoManual, agendada e por push.
+
+#- Geração de relatório de testes.
+#- Armazenamento/publicação do relatório na pipeline.
+#- Criação de um README explicando a solução e os conceitos utilizados. name: CI - Testes Mocha
+
+name: 'CI - Execução de 3 Níveis'
+
+on:
+  push:
+    branches: [ main ]
+
+  workflow_dispatch:   # execução manual
+
+  schedule:            # execução agendada
+    - cron: '0/20 * * * *''  
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalando Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalando dependências
+        run: npm ci
+
+      - name: Executando testes (Mocha)
+        run: npm test
+
+      - name: Gerando relatórios
+        if: always()
+        run: |
+          mkdir -p reports
+          echo "Test run completed" > reports/report.txt
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: reports/
