@@ -8,7 +8,7 @@ name: 'CI - Execução de 3 Níveis'
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main ] #execução por push
 
   workflow_dispatch:   # execução manual
 
