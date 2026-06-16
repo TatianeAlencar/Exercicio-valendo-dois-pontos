@@ -5,8 +5,8 @@ Declare um vetor contendo informações sobre usuários de um site, contendo as 
 id, nome, email, senha e expirado (boleano, pode ser true ou false). 
 Adicione ao menos um dos usuarios como expirado sendo true.*/
 
-import { error } from "node:console";
-import { MessageEvent } from "node:http";
+//import { error } from "node:console";
+//import { MessageEvent } from "node:http";
 
 const users = [
     {
