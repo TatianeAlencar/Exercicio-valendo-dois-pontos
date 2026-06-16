@@ -1,0 +1,157 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-06-16T16:04:47.159Z",
+    "end": "2026-06-16T16:04:47.164Z",
+    "duration": 5,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "12beeb40-9db7-44bd-ac40-2bd807674d97",
+      "title": "",
+      "fullFile": "C:\\projetosPos\\ci-avaliacao\\Exercicio-valendo-dois-pontos\\test\\exercicio.DoisPontos.test.js",
+      "file": "\\test\\exercicio.DoisPontos.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "974c6eb5-0f55-49fa-98b5-23e856b49565",
+          "title": "Testando login",
+          "fullFile": "C:\\projetosPos\\ci-avaliacao\\Exercicio-valendo-dois-pontos\\test\\exercicio.DoisPontos.test.js",
+          "file": "\\test\\exercicio.DoisPontos.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Sucesso",
+              "fullTitle": "Testando login Sucesso",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Act\nconst retornodaFuncaoLogin = fazerLogin('cris@gmail', 456);\n//Assert\nassert.equal(retornodaFuncaoLogin, 'Login realizado com sucesso')",
+              "err": {},
+              "uuid": "6072a55a-0321-4d58-a3a8-fea07ca60343",
+              "parentUUID": "974c6eb5-0f55-49fa-98b5-23e856b49565",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Credencial expirada",
+              "fullTitle": "Testando login Credencial expirada",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Act\nconst retornodaFuncaoLogin = fazerLogin('paula@gmail', 123);\n//Assert\nassert.equal(retornodaFuncaoLogin, 'Renove suas credenciais')",
+              "err": {},
+              "uuid": "57578be6-2b00-41c5-9665-63d22a06bf40",
+              "parentUUID": "974c6eb5-0f55-49fa-98b5-23e856b49565",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Usuario não encontrado",
+              "fullTitle": "Testando login Usuario não encontrado",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Act\nconst retornodaFuncaoLogin = fazerLogin('ted@gmail.com', 789);\n//Assert\nassert.equal(retornodaFuncaoLogin, 'Usuario não encontrado')",
+              "err": {},
+              "uuid": "193ecfea-6a2c-4b45-b4e4-7eb57d510741",
+              "parentUUID": "974c6eb5-0f55-49fa-98b5-23e856b49565",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Senha incorreta para o usuário encontrado",
+              "fullTitle": "Testando login Senha incorreta para o usuário encontrado",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Act\nconst retornodaFuncaoLogin = fazerLogin('cris@gmail', 789);\n//Assert\nassert.equal(retornodaFuncaoLogin, 'Senha incorreta para o usuário encontrado')",
+              "err": {},
+              "uuid": "1b7ce98d-d271-459a-8d21-399568507c01",
+              "parentUUID": "974c6eb5-0f55-49fa-98b5-23e856b49565",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6072a55a-0321-4d58-a3a8-fea07ca60343",
+            "57578be6-2b00-41c5-9665-63d22a06bf40",
+            "193ecfea-6a2c-4b45-b4e4-7eb57d510741",
+            "1b7ce98d-d271-459a-8d21-399568507c01"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.6"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.2"
+    }
+  }
+}
