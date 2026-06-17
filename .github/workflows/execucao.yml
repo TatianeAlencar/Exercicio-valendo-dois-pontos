@@ -1,4 +1,4 @@
-#CI de nível 01, 02 e 04 - ExecuçãoManual, agendada e por push.
+#CI de nível 01, 02 e 04 - Execução Manual, agendada e por push.
 
 #- Geração de relatório de testes.
 #- Armazenamento/publicação do relatório na pipeline.
@@ -13,7 +13,7 @@ on:
   workflow_dispatch:   # execução manual
 
   schedule:            # execução agendada
-    - cron: '0/20 * * * *' 
+    - cron: '0 0 * * *'
 
 jobs:
   test:
