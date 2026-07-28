@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2026-06-17T15:24:10.240Z",
-    "end": "2026-06-17T15:24:10.246Z",
-    "duration": 6,
+    "start": "2026-06-17T16:35:34.376Z",
+    "end": "2026-06-17T16:35:34.381Z",
+    "duration": 5,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "19a792ba-3810-4a9c-bcf0-243852a8121f",
+      "uuid": "02ae6241-3155-4c0b-9d20-6e2bbed4450c",
       "title": "",
       "fullFile": "C:\\projetosPos\\ci-avaliacao\\Exercicio-valendo-dois-pontos\\test\\exercicio.DoisPontos.test.js",
       "file": "\\test\\exercicio.DoisPontos.test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4be4e639-9e9d-4c18-8ee1-e8b295f63c84",
+          "uuid": "c9a1bedc-84b9-4f17-a927-8b78ca0699a6",
           "title": "Testando login",
           "fullFile": "C:\\projetosPos\\ci-avaliacao\\Exercicio-valendo-dois-pontos\\test\\exercicio.DoisPontos.test.js",
           "file": "\\test\\exercicio.DoisPontos.test.js",
@@ -47,8 +47,8 @@
               "context": null,
               "code": "//Act\nconst retornodaFuncaoLogin = fazerLogin('cris@gmail', 456);\n//Assert\nassert.equal(retornodaFuncaoLogin, 'Login realizado com sucesso')",
               "err": {},
-              "uuid": "5fe28b93-e7cf-4e87-bb78-a0fb4ac47847",
-              "parentUUID": "4be4e639-9e9d-4c18-8ee1-e8b295f63c84",
+              "uuid": "d7e95094-bab7-491f-b96a-96047d14c815",
+              "parentUUID": "c9a1bedc-84b9-4f17-a927-8b78ca0699a6",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "//Act\nconst retornodaFuncaoLogin = fazerLogin('paula@gmail', 123);\n//Assert\nassert.equal(retornodaFuncaoLogin, 'Renove suas credenciais')",
               "err": {},
-              "uuid": "d4a95def-7aae-40ca-80a9-4e75b56fcd49",
-              "parentUUID": "4be4e639-9e9d-4c18-8ee1-e8b295f63c84",
+              "uuid": "499b01dc-ff95-495b-aa7e-ab8452fb9115",
+              "parentUUID": "c9a1bedc-84b9-4f17-a927-8b78ca0699a6",
               "isHook": false,
               "skipped": false
             },
@@ -83,8 +83,8 @@
               "context": null,
               "code": "//Act\nconst retornodaFuncaoLogin = fazerLogin('ted@gmail.com', 789);\n//Assert\nassert.equal(retornodaFuncaoLogin, 'Usuario não encontrado')",
               "err": {},
-              "uuid": "63aadf06-14e9-4f8c-9037-4ee15af21fdc",
-              "parentUUID": "4be4e639-9e9d-4c18-8ee1-e8b295f63c84",
+              "uuid": "0747177e-bc23-4ea6-9627-c8977a70fc85",
+              "parentUUID": "c9a1bedc-84b9-4f17-a927-8b78ca0699a6",
               "isHook": false,
               "skipped": false
             },
@@ -101,18 +101,18 @@
               "context": null,
               "code": "//Act\nconst retornodaFuncaoLogin = fazerLogin('cris@gmail', 789);\n//Assert\nassert.equal(retornodaFuncaoLogin, 'Senha incorreta para o usuário encontrado')",
               "err": {},
-              "uuid": "038b84dc-adf3-41af-8c68-dc9cbe17628e",
-              "parentUUID": "4be4e639-9e9d-4c18-8ee1-e8b295f63c84",
+              "uuid": "7d3b1491-a160-4d1d-863c-4d220b36c842",
+              "parentUUID": "c9a1bedc-84b9-4f17-a927-8b78ca0699a6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5fe28b93-e7cf-4e87-bb78-a0fb4ac47847",
-            "d4a95def-7aae-40ca-80a9-4e75b56fcd49",
-            "63aadf06-14e9-4f8c-9037-4ee15af21fdc",
-            "038b84dc-adf3-41af-8c68-dc9cbe17628e"
+            "d7e95094-bab7-491f-b96a-96047d14c815",
+            "499b01dc-ff95-495b-aa7e-ab8452fb9115",
+            "0747177e-bc23-4ea6-9627-c8977a70fc85",
+            "7d3b1491-a160-4d1d-863c-4d220b36c842"
           ],
           "failures": [],
           "pending": [],

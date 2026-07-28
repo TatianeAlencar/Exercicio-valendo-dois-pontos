@@ -1,5 +1,4 @@
 #CI de nível 01, 02 e 04 - Execução Manual, agendada e por push.
-
 #- Geração de relatório de testes.
 #- Armazenamento/publicação do relatório na pipeline.
 #- Criação de um README explicando a solução e os conceitos utilizados. name: CI - Testes Mocha
@@ -12,8 +11,8 @@ on:
 
   workflow_dispatch:   # execução manual
 
-  schedule:            # execução agendada
-    - cron: '0 0 * * *'
+ # schedule:            # execução agendada todos os dias, meia noite
+ #   - cron: '0 0 * * *'
 
 jobs:
   test:
